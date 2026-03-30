@@ -3,20 +3,57 @@
 <head>
 <meta charset='UTF-8'>
 <title>Human in the Loop</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
 <style>
-  body {font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px;}
-  h1 {color: #333;}
-  ul {list-style: none; padding: 0;}
-  li {margin: 10px 0;}
-  a {text-decoration: none; color: #0066cc;}
+  body {margin:0;font-family:Arial,sans-serif;background:#f9f9f9;color:#222; line-height:1.6;}
+  header {background:#333;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+  header a {color:#fff;text-decoration:none;font-weight:bold;margin-left:1rem;}
+  .hero {background:#0066cc;color:#fff;padding:4rem 2rem;text-align:center;}
+  .hero h1 {font-size:2.5rem;margin:0 0 .5rem;}
+  .hero p {font-size:1.2rem;margin:0 0 1.5rem;}
+  .cta {background:#ff6600;color:#fff;padding:.8rem 1.5rem;border:none;border-radius:4px;cursor:pointer;font-size:1rem;}
+  .section {padding:2rem;max-width:900px;margin:auto;}
+  .section h2 {color:#0066cc; margin-top:0;}
+  .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+  .card {background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);padding:1rem;}
+  footer {background:#333;color:#fff;padding:1rem 2rem;text-align:center;}
+  a {color:#0066cc;}
+  @media (max-width:600px){ .hero h1{font-size:2rem;} }
 </style>
 </head>
 <body>
-<h1>Human in the Loop</h1>
-<p>A collection of articles, case studies, and a weekly comic about the importance of human oversight in AI systems.</p>
-<ul>
-  <li><a href='https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/content/human-in-the-loop-use-cases.md'>Use Cases (Tragic & Funny)</a></li>
-  <li><a href='https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/blog/human-in-the-loop-necessity.md'>Why Human‑in‑the‑Loop is Mandatory (Blog Post)</a></li>
-</ul>
+<header>
+  <div><strong>Human in the Loop</strong></div>
+  <nav>
+    <a href=#use-cases>Use Cases</a>
+    <a href=#blog>Blog</a>
+    <a href=#comic>Comic</a>
+  </nav>
+</header>
+<section class=hero>
+  <h1>Human oversight matters.</h1>
+  <p>Explore why keeping a human in the loop is essential for safe AI.</p>
+  <button class=cta onclick=location.href=#use-cases>Learn More</button>
+</section>
+<section id=use-cases class=section>
+  <h2>Recent Use Cases (Tragic & Funny)</h2>
+  <div class=grid>
+    <div class=card><a href=https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/content/human-in-the-loop-use-cases.md#7-openclaw-credit‑card-mishap>OpenClaw credit‑card mishap</a></div>
+    <div class=card><a href=https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/content/human-in-the-loop-use-cases.md#8-unitedhealthcare-ai-claims-denial>UnitedHealthcare claim denial</a></div>
+    <div class=card><a href=https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/content/human-in-the-loop-use-cases.md#9-defense‑human‑in‑the‑loop‑critique>Defense AI critique</a></div>
+    <div class=card><a href=https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/content/human-in-the-loop-use-cases.md#10-ai‑customer‑service‑bot‑refund‑error>AI chatbot refund error</a></div>
+  </div>
+</section>
+<section id=blog class=section>
+  <h2>Featured Blog Post</h2>
+  <p><a href=https://raw.githubusercontent.com/Renegadekn/human-in-the-loop/main/blog/human-in-the-loop-necessity.md>Why Human‑in‑the‑Loop Must Be Built‑In From Day One</a></p>
+</section>
+<section id=comic class=section>
+  <h2>Weekly Comic: Human in a Loop</h2>
+  <p>Stay tuned for a three‑panel comic starring Ada, Bolt, and Sam. Coming soon!</p>
+</section>
+<footer>
+  © 2026 Human in the Loop – All rights reserved.
+</footer>
 </body>
 </html>
