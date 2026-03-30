@@ -5,14 +5,27 @@
 <title>Human in the Loop</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <style>
- /* Primary colors */
---bg      : #f4f9ff;   /* very light blue background */
---header  : #0a3d62;   /* deep navy header */
---accent  : #0097e6;   /* bright teal for CTA/buttons */
---link    : #0066cc;   /* standard link blue (keep for consistency) */
-
-/* Text */
---text    : #222222;   /* dark gray for readability */
+  :root {
+    --bg: #fff7e6;      /* warm off‑white */
+    --header: #333333;  /* charcoal */
+    --hero: #ff6600;    /* orange hero */
+    --accent: #ff6600;  /* orange CTA */
+    --link: #d35400;    /* darker orange links */
+    --text: #2c3e50;    /* dark slate */
+  }
+  body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  header{background:var(--header);color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+  header a{color:#fff;text-decoration:none;font-weight:bold;margin-left:1rem;}
+  .hero{background:var(--hero);color:#fff;padding:4rem 2rem;text-align:center;}
+  .cta{background:var(--accent);color:#fff;padding:.8rem 1.5rem;border:none;border-radius:4px;cursor:pointer;font-size:1rem;}
+  a{color:var(--link);}
+  .section{padding:2rem;max-width:900px;margin:auto;}
+  .section h2{color:var(--hero);margin-top:0;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+  .card{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);padding:1rem;}
+  footer{background:var(--header);color:#fff;padding:1rem 2rem;text-align:center;}
+  .placeholder-img{width:100%;height:auto;max-width:100%;border-radius:4px;}
+  @media (max-width:600px){ .hero h1{font-size:2rem;} }
 </style>
 </head>
 <body>
@@ -32,6 +45,11 @@
     <button class="cta" style="background:#ff6600;margin-left:0.5rem;" onclick="location.href='theme2.html'">Warm Professional (Orange)</button>
     <button class="cta" style="background:#27ae60;margin-left:0.5rem;" onclick="location.href='theme3.html'">Minimalist (Green)</button>
   </div>
+</section>
+<section id="about" class="section">
+  <h2>About Human‑in‑the‑Loop</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel ligula scelerisque, finibus odio a, facilisis lorem.</p>
+  <img src="https://via.placeholder.com/800x400?text=Placeholder+Image" alt="Placeholder" class="placeholder-img" />
 </section>
 <section id=use-cases class=section>
   <h2>Recent Use Cases (Tragic & Funny)</h2>
